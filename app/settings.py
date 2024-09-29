@@ -27,7 +27,7 @@ class AzureOpenAIGPT4:
 @dataclass
 class IndexConfig:
     SENTENCE_TRANSFORMERS_MODEL_NAME: str = "sentence-transformers/all-MiniLM-L6-v2"
-    CHUNK_SIZE: int = 600
+    CHUNK_SIZE: int = 400
     CHUNK_OVERLAP: int = 128
     CHROMA_PATH: str = "my_vectordb"
 

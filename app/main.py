@@ -24,7 +24,14 @@ app = FastAPI(
     description="Welcome to app chatbot",
 )
 setup_logging()
-
+# Cấu hình CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Cho phép tất cả origins, bạn nên hạn chế điều này trong môi trường sản xuất
+    allow_credentials=True,
+    allow_methods=["*"],  # Cho phép tất cả các phương thức
+    allow_headers=["*"],  # Cho phép tất cả các headers
+)
 logger.info("Starting app")
 
 

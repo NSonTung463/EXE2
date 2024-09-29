@@ -69,4 +69,4 @@ class LLMSelector:
 
 # Usage example
 selector = LLMSelector()
-llm = selector.get_llm("openai")
+llm = selector.get_llm("gemini")
