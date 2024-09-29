@@ -26,7 +26,7 @@ def index(request: Request, file: UploadFile):
     return JSONResponse(
         content={
             "status": status.HTTP_200_OK,
-            "message": "Hoàn thành lập chỉ mục",
+            "message": "Successful indexing, save all chunk in db",
             "data": "",
         }
     )

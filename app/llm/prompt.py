@@ -18,6 +18,17 @@ Question: {question}
 
 Answer: """
 
+
+chat_with_exam = """
+"You are an assistant for question-answering tasks. Based on the provided question and exam materials, answer the following:
+
+Question: {question}
+
+Exam: {exam}
+
+Your Answer:"
+"""
+
 # chat_with_history_prompt = """The following is a friendly conversation between a human and an AI. The AI is talkative and provides lots of specific details from its context. If the AI does not know the answer to a question, it truthfully says it does not know.
 
 # Current conversation:

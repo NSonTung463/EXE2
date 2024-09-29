@@ -6,15 +6,12 @@ import os
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-from app.settings import IndexConfig
+from app.settings import IndexConfig, embedding
 from loguru import logger
 
 class DocumentSearch:
-    def __init__(self):
-        self.embedding = HuggingFaceEmbeddings(
-            model_name=IndexConfig.SENTENCE_TRANSFORMERS_MODEL_NAME,
-            model_kwargs={"device": "cpu"}
-        )
+    def __init__(self, embedding=embedding):
+        self.embedding = embedding
         self.CHROMA_PATH = IndexConfig.CHROMA_PATH
         self.db = Chroma(embedding_function=self.embedding, persist_directory=self.CHROMA_PATH)
     
