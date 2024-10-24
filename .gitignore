@@ -140,6 +140,7 @@ cython_debug/
 # MacOS Finder metadata file
 .DS_Store
 
+logs/
 local_files/
 data/
 my_vectordb
