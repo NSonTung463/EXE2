@@ -139,3 +139,9 @@ cython_debug/
 
 # MacOS Finder metadata file
 .DS_Store
+
+local_files/
+data/
+my_vectordb
+saved_pdfs
+uploaded_files

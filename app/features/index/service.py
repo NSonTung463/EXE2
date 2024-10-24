@@ -10,7 +10,6 @@ from app.settings import IndexConfig
 from loguru import logger
 import uuid
 
-    
 class Indexer:
     def __init__(self):
         self.embedding = HuggingFaceEmbeddings(

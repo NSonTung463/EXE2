@@ -1,5 +1,4 @@
 from pydantic.v1 import BaseModel as BaseModel_v1
-
 from fastapi import APIRouter, Request, status
 from fastapi.responses import JSONResponse
 
